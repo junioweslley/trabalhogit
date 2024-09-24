@@ -1,72 +1,167 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página Estilizada com Bootstrap</title>
-    <!-- Link do CSS do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        /* Estilos personalizados */
-        body {
-            background-color: #fff8e1; /* Amarelo claro */
-            color: #212529;
-        }
-        .bg-theme {
-            background-color: #ffc107; /* Amarelo do Bootstrap */
-        }
-        .nav-link {
-            color: #212529 !important; /* Texto preto no menu */
-        }
-        .nav-link:hover {
-            color: #fff !important; /* Texto branco ao passar o mouse */
-        }
-        .section-container {
-            border-left: 5px solid #ffc107;
-            padding-left: 15px;
-        }
-        footer {
-            background-color: #343a40;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>servitech.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
 </head>
 <body>
 
-    <!-- Cabeçalho com menu de navegação -->
-    <header class="bg-theme text-white py-4 mb-4">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <h1 class="mb-0">Minha Página Amarela</h1>
-                <nav>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#secao1">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#secao2">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#secao3">Contato</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
+  
+  <header class="bg-warning text-dark text-center py-4">
+    <div class="container">
+      <h1>Servitech Soluções em Tecnologia</h1>
+      <nav>
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+ 
+  <section class="bg-warning text-dark text-center py-5">
+    <div class="container">
+      <h2>Bem-vindo à nossa Página</h2>
+      <p>Explore nosso conteúdo e descubra mais sobre nossos serviços e projetos.</p>
+      <a href="#" class="btn btn-dark btn-lg">Saiba Mais</a>
+    </div>
+  </section>
+
+ 
+  <main class="container mt-5">
+
+    <section id="servicos" class="mb-5">
+      <div class="text-center">
+        <h2 class="text-warning">Nossos Serviços</h2>
+        <p>Oferecemos uma variedade de serviços para atender suas necessidades.</p>
+      </div>
+      
+      <div class="row text-center">
+        
+        <div class="col-md-4">
+          <h3>Desenvolvimento Web</h3>
+          <p>Criação de sites responsivos e modernos, utilizando as mais recentes tecnologias.</p>
         </div>
-    </header>
+        
+        <div class="col-md-4">
+          <h3>Consultoria Técnica</h3>
+          <p>Consultoria especializada em soluções técnicas para empresas de todos os portes.</p>
+        </div>
+        
+        <div class="col-md-4">
+          <h3>Marketing Digital</h3>
+          <p>Planejamento e execução de estratégias de marketing para melhorar sua presença online.</p>
+        </div>
+      </div>
+    </section>
 
-    <!-- Corpo da página -->
-    <main class="py-5">
-        <div class="container">
-            <!-- Seção 1: Início -->
-            <section id="secao1" class="mb-5 section-container">
-                <div class="bg-light p-5 rounded shadow">
-                    <h2 class="text-theme">Bem-vindo à Minha Página</h2>
-                    <p>Esta é a seção de boas-vindas. Aqui você pode introduzir os visitantes ao conteúdo do seu site com uma breve descrição ou mensagem inspiradora. Utilize este espaço para chamar a atenção dos visitantes e direcioná-los para o restante do conteúdo.</p>
-                    <button class="btn btn-theme btn-lg text-white">Saiba Mais</button>
-                </div>
-            </section>
+  
+    <section id="portfolio" class="mb-5">
+      <div class="text-center">
+        <h2 class="text-warning">Portfólio</h2>
+        <p>Confira alguns de nossos projetos realizados para clientes satisfeitos.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/350x200" class="img-fluid rounded" alt="Projeto 1">
+          <h4 class="mt-2">Desenvolvimento</h4>
+          <p>Site criado para a empresa Premier.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/350x200" class="img-fluid rounded" alt="Projeto 2">
+          <h4 class="mt-2">Consultoria</h4>
+          <p>Consultoria de metodo Design Thinking para a empresa Amatec.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="https://via.placeholder.com/350x200" class="img-fluid rounded" alt="Projeto 3">
+          <h4 class="mt-2">Marketing digital</h4>
+          <p>Cuidando das redes sociais da empresa FIO.</p>
+        </div>
+      </div>
+    </section>
 
-            <!-- Seção 2: Serviços -->
-            <section id="sec
+   
+    <section id="contato" class="mb-5">
+      <div class="text-center">
+        <h2 class="text-warning">Contato</h2>
+        <p>Entre em contato conosco para mais informações ou solicite um orçamento.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <form>
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="Seu email">
+            </div>
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem</label>
+              <textarea class="form-control" id="mensagem" rows="3" placeholder="Sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning">Enviar</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h4>Endereço</h4>
+          <p> Rua Cristinha, 170, Belo Horizonte, Minas Gerais</p>
+          <h4>Telefone</h4>
+          <p> (31) 98395-0830</p>
+          <h4>Email</h4>
+          <p> junio.weslley@hotmail.com</p>
+        </div>
+      </div>
+    </section>
 
-            
+  </main>
+
+  
+  <footer class="bg-warning text-dark text-center py-4">
+    <div class="container">
+      <p>&copy; <span id="current-year"></span> Desenvolvido por Weslley Junio. Todos os direitos reservados.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item">
+          <a href="#" class="text-dark">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-dark">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="text-dark">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
